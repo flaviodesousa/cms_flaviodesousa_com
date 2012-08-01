@@ -1,4 +1,11 @@
+# -*- coding: utf-8 -*-
 # Django settings for flaviodesousa_cms project.
+
+import os
+
+gettext = lambda s: s
+
+PROJECT_PATH = os.path.split(os.path.dirname(os.path.realpath(__file__)))[0]
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -118,8 +125,16 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'cms',
+    'mptt',
+    'menus',
+    'south',
+    'sekizai',
+    'cms.plugins.link',
+    'cms.plugins.picture',
+    'cms.plugins.text',
+    'cms.plugins.inherit',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
