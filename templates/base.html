@@ -1,0 +1,13 @@
+{% load cms_tags sekizai_tags %}
+<html>
+  <head>
+  	  <!-- keep this at the end of <head> -->
+      {% render_block "css" %}
+  </head>
+  <body>
+      {% placeholder base_content %}
+      {% block base_content%}{% endblock %}
+      <!-- keep this at the end of <body> -->
+      {% render_block "js" %}
+  </body>
+</html>
