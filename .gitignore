@@ -1,3 +1,5 @@
 mycms.db
 *.pyc
 env/*
+*.sublime-*
+database.sqlite
