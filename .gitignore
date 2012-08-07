@@ -3,3 +3,4 @@ mycms.db
 env/*
 *.sublime-*
 database.sqlite
+static/*
