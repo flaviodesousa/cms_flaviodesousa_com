@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
+    <title>{% placeholder title %}</title>
       <!-- IE6-8 support of HTML elements -->
       <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,9 +24,9 @@
   </head>
   <body>
       <div class="row">
-        <div class="span2">{% placeholder left_notes %}Fake l</div>
-        <div class="span6">{% placeholder base_content %}Fake m</div>
-        <div class="span4">{% placeholder right_notes %}Fake r</div>
+        <div class="span2">{% placeholder left_notes %}</div>
+        <div class="span6">{% placeholder base_content %}</div>
+        <div class="span4">{% placeholder right_notes %}</div>
       </div>
       {% block base_content%}{% endblock %}
       <!-- keep this at the end of <body> -->
