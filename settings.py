@@ -1,5 +1,3 @@
-ALLOWED_HOSTS = ( '127.0.0.1', )
-
 ######################
 # MEZZANINE SETTINGS #
 ######################
@@ -123,7 +121,7 @@ SITE_ID = 1
 USE_I18N = False
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = "bcd35efa-ac50-479e-b53f-b5fa53212b8c98b3ba3a-f746-49e2-a30b-90175882340792243c06-34e5-4c2c-8ce9-ab76a5c151d6"
+#SECRET_KEY = <generate 3x with uuidgen(1)>
 
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
