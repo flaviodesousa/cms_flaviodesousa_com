@@ -334,7 +334,7 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 try:
     from local_settings import *
 except ImportError:
-    pass
+    raise ImportError("Create a symlink to the correct local_settings version")
 
 
 ####################
