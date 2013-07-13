@@ -4,6 +4,8 @@ from django.contrib import admin
 
 from mezzanine.core.views import direct_to_template
 
+from settings import *
+
 
 admin.autodiscover()
 
@@ -15,7 +17,7 @@ urlpatterns = patterns("",
 
     # Change the admin prefix here to use an alternate URL for the
     # admin interface, which would be marginally more secure.
-    ("^admin/", include(admin.site.urls)),
+    (CMS_FLAVIODESOUSA_ADMIN_URL, include(admin.site.urls)),
 
     # We don't want to presume how your homepage works, so here are a
     # few patterns you can use to set it up.

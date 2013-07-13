@@ -1,6 +1,11 @@
 import os
 from django.core.exceptions import ImproperlyConfigured
 
+CMS_FLAVIODESOUSA_ADMIN_URL_VAR = 'CMS_FLAVIODESOUSA_ADMIN_URL'
+CMS_FLAVIODESOUSA_ADMIN_URL = os.getenv(CMS_FLAVIODESOUSA_ADMIN_URL_VAR)
+if CMS_FLAVIODESOUSA_ADMIN_URL is None:
+    raise ImproperlyConfigured("Missing environment variable {0}".format(CMS_FLAVIODESOUSA_ADMIN_URL_VAR))
+
 ######################
 # MEZZANINE SETTINGS #
 ######################
@@ -123,7 +128,6 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = False
 
-# Make this unique, and don't share it with anybody.
 CMS_DJANGO_SECRET_KEY = 'CMS_DJANGO_SECRET_KEY'
 SECRET_KEY = os.getenv(CMS_DJANGO_SECRET_KEY)
 if SECRET_KEY is None:
