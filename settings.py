@@ -1,3 +1,6 @@
+import os
+from django.core.exceptions import ImproperlyConfigured
+
 ######################
 # MEZZANINE SETTINGS #
 ######################
@@ -121,7 +124,10 @@ SITE_ID = 1
 USE_I18N = False
 
 # Make this unique, and don't share it with anybody.
-#SECRET_KEY = <generate 3x with uuidgen(1)>
+CMS_DJANGO_SECRET_KEY = 'CMS_DJANGO_SECRET_KEY'
+SECRET_KEY = os.getenv(CMS_DJANGO_SECRET_KEY)
+if SECRET_KEY is None:
+    raise ImproperlyConfigured("Missing environment variable {0}".format(CMS_DJANGO_SECRET_KEY))
 
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
@@ -170,8 +176,6 @@ DATABASES = {
 #########
 # PATHS #
 #########
-
-import os
 
 # Full filesystem path to the project.
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
