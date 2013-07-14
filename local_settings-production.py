@@ -1,13 +1,13 @@
 # to use this symlink it to local_settings.py
 
-DEBUG = True
+DEBUG = False
 
 DATABASES = {
     "default": {
         # Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
         "ENGINE": "django.db.backends.sqlite3",
         # DB name or path to database file if using sqlite3.
-        "NAME": "cms.flaviodesousa.com.sqlite3",
+        "NAME": "/var/sqlite3/flaviodesousa.db",
         # Not used with sqlite3.
         "USER": "",
         # Not used with sqlite3.

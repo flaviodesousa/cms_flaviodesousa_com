@@ -7,3 +7,4 @@
 local_settings.py
 /static
 *.sublime-*
+uwsgi_reload
