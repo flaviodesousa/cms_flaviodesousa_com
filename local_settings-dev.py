@@ -1,4 +1,4 @@
-# to use this symlink it to local_settings.py
+# to use this file symlink it to local_settings.py
 
 DEBUG = True
 

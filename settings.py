@@ -3,10 +3,9 @@ RICHTEXT_FILTER_LEVEL = 'None'
 import os
 from django.core.exceptions import ImproperlyConfigured
 
-CMS_FLAVIODESOUSA_ADMIN_URL_VAR = 'CMS_FLAVIODESOUSA_ADMIN_URL'
-CMS_FLAVIODESOUSA_ADMIN_URL = os.getenv(CMS_FLAVIODESOUSA_ADMIN_URL_VAR)
+CMS_FLAVIODESOUSA_ADMIN_URL = os.getenv('CMS_FLAVIODESOUSA_ADMIN_URL')
 if CMS_FLAVIODESOUSA_ADMIN_URL is None:
-    raise ImproperlyConfigured("Missing environment variable {0}".format(CMS_FLAVIODESOUSA_ADMIN_URL_VAR))
+    raise ImproperlyConfigured("Missing environment variable 'CMS_FLAVIODESOUSA_ADMIN_URL'")
 
 ######################
 # MEZZANINE SETTINGS #
@@ -130,10 +129,10 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = False
 
-CMS_DJANGO_SECRET_KEY = 'CMS_DJANGO_SECRET_KEY'
-SECRET_KEY = os.getenv(CMS_DJANGO_SECRET_KEY)
+SECRET_KEY = os.getenv('CMS_DJANGO_SECRET_KEY')
 if SECRET_KEY is None:
-    raise ImproperlyConfigured("Missing environment variable {0}".format(CMS_DJANGO_SECRET_KEY))
+    raise ImproperlyConfigured("Missing environment variable 'CMS_DJANGO_SECRET_KEY'")
+NEVERCACHE_KEY = "0f02e505-9ac7-44dc-a9c0-841d8d2e87f7b5729387-f898-4a39-9a2e-94c1da44038bef634404-6dce-4a5a-a8e1-85647945fd8c"
 
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
@@ -155,6 +154,10 @@ STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
+
+# The numeric mode to set newly-uploaded files to. The value should be
+# a mode you'd pass directly to os.chmod.
+FILE_UPLOAD_PERMISSIONS = 0644
 
 
 #############
@@ -328,6 +331,8 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 #     "REPO_URL": "", # Git or Mercurial remote repo URL for the project
 #     "DB_PASS": "", # Live database password
 #     "ADMIN_PASS": "", # Live admin user password
+#     "SECRET_KEY": SECRET_KEY,
+#     "NEVERCACHE_KEY": NEVERCACHE_KEY,
 # }
 
 
