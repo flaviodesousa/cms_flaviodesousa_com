@@ -1,0 +1,6 @@
+Author: Flavio de Sousa
+Contact: fl@viodesousa.com
+Twitter: @flaviodesousa
+From: Brasilia, Brazil
+Language: English
+IDE: Sublime Text, zsh
