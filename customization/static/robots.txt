@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /static/
+Allow: /static/media/
+Allow: /static/img/favicon.ico
