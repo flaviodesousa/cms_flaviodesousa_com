@@ -22,10 +22,10 @@ Source: [ReadTheDocs](http://virtualenvwrapper.readthedocs.org/en/latest/)
 - `source virtualenvwrapper.sh`
 - `mkvirtualenv cms`
 
-PIL Prereqs
------------
+Pillow Prereqs
+--------------
 
-- `sudo apt-get install libjpeg-dev libjpeg62 libjpeg62-dev zlib1g-dev libfreetype6 libfreetype6-dev`
+- `sudo apt-get install python2.7-dev libjpeg-dev libjpeg8 libjpeg8-dev zlib1g-dev libfreetype6 libfreetype6-dev`
 
 The steps below were needed on a 64 bit Ubuntu 12.04
 ----------------------------------------------------
