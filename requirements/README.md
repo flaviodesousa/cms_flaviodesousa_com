@@ -34,7 +34,7 @@ The steps below were needed on a 64 bit Ubuntu 12.04
 - `sudo ln -s /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib`
 - `sudo ln -s /usr/lib/x86_64-linux-gnu/libfreetype.so /usr/lib`
 
-PIL
----
+Finally install the requirements
+--------------------------------
 
 - `pip install -r requirements/project.txt`
