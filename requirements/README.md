@@ -1,12 +1,15 @@
-Prepare Python
-==============
+Development Environment
+=======================
 
-install Python 2.7
-cd /tmp
-wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-sudo python get-pip.py
-sudo pip install --upgrade setuptools # just in case...
-sudo pip install virtualenv
+Python and pip
+--------------
+
+- sudo apt-get install python2.7
+- cd /tmp
+- wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+- sudo python get-pip.py
+- sudo pip install --upgrade setuptools # just in case...
+- sudo pip install virtualenv
 
 PIL on 64 bit Ubuntu 12.04
 --------------------------
