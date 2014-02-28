@@ -45,3 +45,8 @@ Finally install the requirements
 --------------------------------
 
 - `pip install -r requirements/project.txt`
+
+References
+----------
+
+- [virtualenvwrapper docs](http://virtualenvwrapper.readthedocs.org/en/latest/index.html)
