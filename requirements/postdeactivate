@@ -1,0 +1,4 @@
+#!/bin/zsh
+# This hook is run after this virtualenv is deactivated.
+
+unset CMS_FLAVIODESOUSA_ADMIN_URL CMS_DJANGO_SECRET_KEY
