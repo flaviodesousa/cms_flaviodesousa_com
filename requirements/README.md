@@ -11,6 +11,12 @@ Python and pip
 - `sudo pip install --upgrade setuptools` # just in case...
 - `sudo pip install virtualenv`
 
+Clone sources
+-------------
+
+- `cd; mkdir -p dev`
+- git clone
+
 Config virtualenvwrapper
 ------------------------
 Source: [ReadTheDocs](http://virtualenvwrapper.readthedocs.org/en/latest/)
@@ -21,6 +27,7 @@ Source: [ReadTheDocs](http://virtualenvwrapper.readthedocs.org/en/latest/)
 - `mkdir $WORKON_HOME`
 - `source virtualenvwrapper.sh`
 - `mkvirtualenv cms`
+- Copy lazy environment settings: `cp <project dir>/requirements/post* $WORKON_HOME/cms/bin`
 
 Pillow Prereqs
 --------------
