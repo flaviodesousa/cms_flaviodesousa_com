@@ -50,3 +50,7 @@ References
 ----------
 
 - [virtualenvwrapper docs](http://virtualenvwrapper.readthedocs.org/en/latest/index.html)
+- [Mezzanine ChangeLog](https://github.com/stephenmcd/mezzanine/blob/master/CHANGELOG)
+- [Mezzanine ChangeLog in Docs](http://mezzanine.jupo.org/docs/colophon.html)
+- [Django Project](https://www.djangoproject.com/)
+- [South Documentation](http://south.readthedocs.org/en/latest/index.html)
