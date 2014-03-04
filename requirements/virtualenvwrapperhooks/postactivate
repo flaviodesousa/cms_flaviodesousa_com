@@ -5,3 +5,5 @@ CMS_FLAVIODESOUSA_ADMIN_URL=admin
 CMS_DJANGO_SECRET_KEY=irrelevant
 
 export CMS_FLAVIODESOUSA_ADMIN_URL CMS_DJANGO_SECRET_KEY
+
+cd ~/dev/cms_flaviodesousa_com
