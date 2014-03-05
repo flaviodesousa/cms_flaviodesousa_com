@@ -19,4 +19,4 @@ DATABASES = {
     }
 }
 
-ALLOWED_HOSTS = [ 'flaviodesousa.com', 'cms.flaviodesousa.com' ]
+ALLOWED_HOSTS = [ 'flaviodesousa.com', 'm.flaviodesousa.com' ]
