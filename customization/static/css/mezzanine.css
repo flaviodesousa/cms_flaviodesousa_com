@@ -49,6 +49,9 @@ ul, ol {
 .tree > .nav .nav > li {
   padding-left: 15px;
 }
+.nav .active > a {
+  font-weight: bolder;
+}
 .tree .active > a {
   background-color: transparent;
   font-weight: bolder;
