@@ -1,7 +1,8 @@
-RICHTEXT_FILTER_LEVEL = 'None'
-
+from __future__ import absolute_import, unicode_literals
 import os
 from django.core.exceptions import ImproperlyConfigured
+
+RICHTEXT_FILTER_LEVEL = 'None'
 
 CMS_FLAVIODESOUSA_ADMIN_URL = os.getenv('CMS_FLAVIODESOUSA_ADMIN_URL')
 if CMS_FLAVIODESOUSA_ADMIN_URL is None:
@@ -106,7 +107,7 @@ MANAGERS = ADMINS
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = None
+TIME_ZONE = 'UTC'
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
@@ -114,6 +115,12 @@ USE_TZ = True
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = "en"
+
+# Supported languages
+_ = lambda s: s
+LANGUAGES = (
+    ('en', _('English')),
+)
 
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
@@ -157,7 +164,7 @@ STATICFILES_FINDERS = (
 
 # The numeric mode to set newly-uploaded files to. The value should be
 # a mode you'd pass directly to os.chmod.
-FILE_UPLOAD_PERMISSIONS = 0644
+FILE_UPLOAD_PERMISSIONS = 0o644
 
 
 #############
@@ -274,6 +281,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 MIDDLEWARE_CLASSES = (
     "mezzanine.core.middleware.UpdateCacheMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
