@@ -2,7 +2,8 @@
 
 TARGET=~/tmp/flaviodesousa-$(date +'%F_%R').tar.xz
 (
-	tar c /var/sqlite3/flaviodesousa.db /var/www/flaviodesousa/static/media/uploads |
+	cd /
+	tar c var/sqlite3/flaviodesousa.db var/www/flaviodesousa/media/uploads |
 		xz -9e > $TARGET
 ) &&
 scp $TARGET @agnes.flaviodesousa.com:backup &&
