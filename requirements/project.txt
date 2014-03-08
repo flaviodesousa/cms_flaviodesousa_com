@@ -3,3 +3,4 @@ Pillow>=2.3.0
 South>=0.8.4
 future>=0.11.3
 html5lib>=0.999
+django-compressor>=1.3
