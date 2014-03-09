@@ -91,6 +91,7 @@
 
 <div class="col-md-7 middle">
     <div class="flaviodesousa-social-rating">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="flaviodesousa">Tweet</a>
         <div class="g-plusone" data-size="medium"></div>
         <div id="fb-root"></div>
         <div class="fb-like" data-href="http://flaviodesousa.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
@@ -150,25 +151,8 @@
 <script src="{% static "js/html5shiv.js" %}"></script>
 <script src="{% static "js/respond.min.js" %}"></script>
 <![endif]-->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<script>
-        $(".fb-like").attr("data-href", window.location.href
-            .replace('https', 'http')
-            .replace('localhost:8000', 'flaviodesousa.com'));
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-</script>
-
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script type="text/javascript">(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/platform.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
+<script>$(".fb-like").attr("data-href", window.location.href.replace('https','http').replace('localhost:8000','flaviodesousa.com'));(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/all.js#xfbml=1";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script>
 </body>
 </html>
