@@ -1,0 +1,4 @@
+<%= f.input :customer_id, as: :hidden %>
+<%= f.input :customer_name, as: :autocomplete,
+   url: autocomplete_customer_name_order_path,
+   input_html: { 'data-id-element' => '#order_customer_id' } %>
