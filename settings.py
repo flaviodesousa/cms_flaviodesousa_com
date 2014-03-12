@@ -343,6 +343,10 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 #     "NEVERCACHE_KEY": NEVERCACHE_KEY,
 # }
 
+# Compressor
+COMPRESS_CSS_FILTERS = ['compressor.filters.cssmin.CSSMinFilter']
+
+
 
 ##################
 # LOCAL SETTINGS #
