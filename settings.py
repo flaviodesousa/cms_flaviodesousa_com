@@ -345,7 +345,7 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 
 # Compressor
 COMPRESS_CSS_FILTERS = ['compressor.filters.cssmin.CSSMinFilter']
-
+COMPRESS_STORAGE = 'compressor.storage.GzipCompressorFileStorage'
 
 
 ##################
