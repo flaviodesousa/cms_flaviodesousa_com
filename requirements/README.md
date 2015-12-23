@@ -24,10 +24,10 @@ Source: [ReadTheDocs](http://virtualenvwrapper.readthedocs.org/en/latest/)
 - `sudo pip install virtualenvwrapper`
 - add `export WORKON_HOME=~/.virtualenv` to .(bas|zs)hrc
 - `export WORKON_HOME=~/.virtualenv`
-- `mkdir $WORKON_HOME`
+- `mkdir -p $WORKON_HOME`
 - `source virtualenvwrapper.sh`
 - `mkvirtualenv cms`
-- Copy lazy environment settings: `cp <project dir>/requirements/post* $WORKON_HOME/cms/bin`
+- Copy lazy environment settings: `cp requirements/virtualenvwrapperhooks/post* $WORKON_HOME/cms/bin`
 
 Pillow Prereqs
 --------------
