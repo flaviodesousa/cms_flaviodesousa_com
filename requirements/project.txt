@@ -1,4 +1,4 @@
-Django==1.6.11
+Django==1.11.28
 Mezzanine==3.1.10
 Pillow==2.8.1
 South==1.0.2
